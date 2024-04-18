@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<style>
+			body {
+				font-family: Arial;
+				background-color: #ffffff;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+
+			.main {
+				background-color: #ffffff;
+				border-radius: 15px;
+				padding: 20px;
+				width: 300px;
+			}
+
+			.main h2 {
+				color: #000000;
+				margin-bottom: 20px;
+        text-align: left;
+        font-size: 25px;
+			}
+      
+			label {
+				display: block;
+				margin-bottom: 5px;
+				color: #555;
+				font-weight: bold;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="password"],
+			select {
+				width: 100%;
+				margin-bottom: 15px;
+				padding: 15px;
+				box-sizing: border-box;
+        border: none;
+				border-radius: 15px;
+        background-color: #e6e6e6;
+			}
+
+			button {
+				padding: 15px;
+				border-radius: 10px;
+				border: none;
+				background-color: #84a4f0;
+				color: white;
+				cursor: pointer;
+				width: 100%;
+				font-size: 16px;
+			}
+      form .policy{
+        display: flex;
+        align-items: center;
+        font-size:12px;
+        font-weight: 100;
+        color: #848383;
+
+
+      }
+      .check{
+        font: size 10px;
+        
+      }
+      .login{
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+}
+.links{
+  cursor: pointer;
+  color: rgb(0, 0, 0);	
+	margin-left: auto;
+	display: flex;
+	width: 100px;
+	margin-right: auto;
+	align-items: center;
+	border: 2px solid rgb(255, 255, 255);
+}
+.facebook,.instagram{
+  width: 30px;
+  height: 40px;
+	padding-left: 10px;
+  align-content: center;
+	border: 1px solid #000000;
+	border-radius: 5px;
+
+}
+.facebook{
+	margin-left: auto;
+	margin-right: auto;
+	color: #3e61a8;
+}
+.instagram{
+	margin-left: auto;
+	margin-right: auto;
+	color: #df2060;
+}
+.facebook:hover{
+  background: #ffffff;
+	border: 3px solid rgb(5, 186, 5);
+}
+.instagram:hover{
+	background: #ffffff;
+	border: 3px solid rgb(5, 186, 5);
+}
+.links i{
+  font-size: 17px;
+}
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.signup{
+  font-size: 15px;
+  color: rgb(108, 108, 108);
+  font-family: 'Poppins',sans-serif;
+	text-align: center;
+}
+.signup a{
+  color: #3498db;
+  text-decoration: none;
+}
+.signup a:hover{
+  text-decoration: underline;
+}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<h2>Create an Account</h2>
+			<form action="">
+				<label for="first"
+					></label
+				>
+				<input
+					type="text"
+					id="first"
+					name="first"
+          placeholder="First Name"
+					required
+				/>
+
+				<label for="last"
+					></label
+				>
+				<input
+					type="text"
+					id="last"
+					name="last"
+          placeholder="Last Name"
+					required
+				/>
+
+				<label for="email"></label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+          placeholder="Email"
+					required
+				/>
+
+				<label for="password"
+					></label
+				>
+				<input
+					type="password"
+					id="password"
+					name="password"
+          placeholder="password"
+					pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$"
+					title="Password must contain at least one number, 
+						one alphabet, one symbol, and be at 
+						least 8 characters long"
+					required
+				/>
+        <div class="policy">
+          <input type="checkbox" class="check">
+          <h3>By proceeding ,I agree to all <a href="">T&C</a> and <a href="">Privacy Policy</a></h3>
+        </div>
+        <a href="Login.html"><button type="button">
+					Create an account</button>
+			  </a>
+        <div class="login">
+         <hr>Or
+       </div>
+       <div class="links">
+          <div class="facebook">
+             <i class="fab fa-facebook-f"><span></span></i>
+          </div>
+          <div class="instagram">
+             <i class="fab fa-instagram"><span></span></i>
+          </div>
+       </div>
+			 <div class="signup">
+        <p>Already have an account? <a href="Login.html">Login</a>.</p>
+      </div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<style>
+			body {
+				font-family: Arial;
+				background-color: #ffffff;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+
+			.main {
+				background-color: #ffffff;
+				border-radius: 15px;
+				padding: 20px;
+				width: 300px;
+			}
+
+			.main h2 {
+				color: #000000;
+				margin-bottom: 20px;
+        text-align: left;
+        font-size: 25px;
+			}
+    
+
+			.input
+		{
+				width: 100%;
+				margin-bottom: 15px;
+				padding: 15px;
+				box-sizing: border-box;
+        border: none;
+				border-radius: 15px;
+        font-size: 20px;
+        font-family: arial;
+        background-color: #e6e6e6;
+			}
+
+			button{
+        margin-top: 50px;
+				padding: 15px;
+				border-radius: 10px;
+				border: none;
+				background-color: #84a4f0;
+				color: white;
+				cursor: pointer;
+				width: 100%;
+				font-size: 16px;
+			}
+      .check{
+        
+        float: right;
+        width: 50px;
+       height: 20px;
+       border: 3px solid blue;
+
+      }
+
+
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<h2 style="text-align: center;">What are your goals?</h2>
+			<form action="">
+        <div>
+          <div class="input">Weight Loss
+            <input type="checkbox" class="check">
+          </div>
+          <div class="input">Music Gain            <input type="checkbox" class="check">
+          </div>
+          <div class="input">Flexibility and Mobility<input type="checkbox" class="check">
+          </div>
+          <div class="input">General Fitness<input type="checkbox" class="check">
+          </div>
+          <div class="input">Event -specific training <input type="checkbox" class="check">
+          </div>
+          <div class="input">Mindfulness and Mental Health <input type="checkbox" class="check">
+          </div>
+
+          <a href="wrokout.html"><button type="button">
+            Confirm</button></a>
+        </div>
+			</form>
+		</div>
+	</body>
+</html>
